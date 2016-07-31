@@ -1,0 +1,39 @@
+<div class="login-wrap center">
+	<div class="login-title">
+		 <h2>请选择登录身份</h2>	
+	</div>
+	<form action="{:U('Admin/switchRole')}" onsubmit="return checkInfo();">
+		<div class="login-body pr">
+			<div class="login-user-info">
+				<span><i class=" fa fa-user-md"></i></span>
+				<input type="text" placeholder="账号" value="{$Think.session.ex_userid}" readonly>
+			</div>
+			<div class="login-user-info">
+				<span><li class="fa fa-user"></li></span>
+				<input type="text" placeholder="姓名" value="{$Think.session.ex_username}" readonly>
+			</div>
+			<div class="login-role">
+				<input type="radio" name="role" value="1"  checked="checked"><span>管理员</span>
+				<input type="radio" name="role" value="2"><span>教师</span>
+				<input type="radio" name="role" value="3"><span>其他</span>
+			</div>
+			<div class="login-mask none">
+				<input type="hidden" class="none" name="type" value="">
+				<div class="login-user-info">
+					<span><i class=" fa fa-user-md"></i></span>
+					<input id="user-id" type="text" name="id" placeholder="请输入学生学号或老师工号" value="">
+				</div>
+				<div class="login-user-info">
+					<span><li class="fa fa-user"></li></span>
+					<input id="user-name" type="text" name="name" placeholder="学生或老师姓名" value="" readonly>
+				</div>
+			</div>
+			<div class="login-submit-wrap">
+				<button>
+					<input class="transparent" type="submit">
+					<i class="fa fa-sign-in"></i>
+				</button>
+			</div>
+		</div>
+	</form>
+</div>

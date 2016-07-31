@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="1.css">
+	<link rel="stylesheet" href="core.css">
+</head>
+<body>
+    <nav id="side-bar" class="side-bar">
+    	<ul class="nav-list">
+    		<li class="nav-list-item">
+    			<a>
+    				<i class="fa fa-tasks"></i>
+    				<span>项目管理</span>
+    				<i class="fa fa-angle-right fr"></i>
+    			</a>
+    			<ul class="sub-list">
+    				<li>
+    					<a href="javascript:openapp('2.html',1,'项目列表',true)">
+    						<i class="fa fa-caret-right"></i>
+    						<span>项目列表</span>
+    						<i class="fa fa-angle-right fr"></i>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:openapp('2.html',2,'项目添加',true)">
+    						<i class="fa fa-caret-right"></i>
+    						<span>项目添加</span>
+    						<i class="fa fa-angle-right fr"></i>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="javascript:openapp('2.html',3,'任务添加',true)">
+    						<i class="fa fa-caret-right"></i>
+    						<span>任务添加</span>
+    						<i class="fa fa-angle-right fr"></i>
+    					</a>
+    				</li>
+    			</ul>
+    		</li>
+    		<li class="nav-list-item">
+    			<a>
+    				<i class="fa fa-users"></i>
+    				<span>项目进度</span>
+    				<i class="fa fa-angle-right fr"></i>
+    			</a>
+    			<ul class="sub-list">
+    				<li>
+    					<a href="javascript:openapp('2.html',4,'完成进度')">
+    						<i class="fa fa-caret-right"></i>
+    						<span>完成进度</span>
+    						<i class="fa fa-angle-right fr"></i>
+    					</a>
+    				</li>
+    			</ul>
+    		</li>
+    		<li class="nav-list-item">
+    			<a>
+    				<i class="fa fa-info-circle"></i>
+    				<span>系统帮助</span>
+    				<i class="fa fa-angle-right fr"></i>
+    			</a>
+    			<ul class="sub-list">
+    				<li>
+    					<a href="javascript:openapp('{:U('Admin/sysinfo')}',5,'系统说明')">
+    						<i class="fa fa-caret-right"></i>
+    						<span>系统说明</span>
+    						<i class="fa fa-angle-right fr"></i>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="mailto:2359146115@qq.com',6,'问题反馈')">
+    						<i class="fa fa-caret-right"></i>
+    						<span>问题反馈</span>
+    						<i class="fa fa-angle-right fr"></i>
+    					</a>
+    				</li>
+    			</ul>
+    		</li>
+    	</ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="tab-nav-wrap">
+            <div class="tab-nav">
+                <ul>
+                    <li class="active" data-id='0'><a data-id='0' href="javascript:openapp('main',0,'主页')">主页</a></li>
+                </ul>
+                <div class="tab-arrow none">
+                    <div class="tab-arrow-l">&lt;</div>
+                    <div class="tab-arrow-r">&gt;</div>
+                </div>
+            </div>
+        </div>
+    	<div class="page-content">
+    		<iframe data-id='0'  src="2.html" width="100%" height="100%" frameborder="0"></iframe>
+    	</div>
+    </div>
+    <script src="jquery-1.11.2.js"></script>
+    <script src="1.js"></script>
+</body>
+</html>

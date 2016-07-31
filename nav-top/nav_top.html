@@ -1,0 +1,20 @@
+<nav class="nav-top">
+	<div class="fl">
+		<span class="system-name">
+			<i class="fa fa-book"></i>
+			<span>{$Think.lang.SYSTEM_NAME}</span>
+		</span>
+	</div>
+	<div class="fr one-line">
+		<i class="icon-user-md"></i>
+		<empty name="username">
+			<span class="user-name">{$Think.session.ex_userid}</span>
+			<else/>
+			<span class="user-name">{$username}</span>
+		</empty>
+		
+		<a href="{:U('Index/logout')}">
+			<span>退出</span>
+		</a>
+	</div>
+</nav>

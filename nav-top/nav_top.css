@@ -1,0 +1,19 @@
+/*nav-top*/
+.nav-top {
+	height: 40px;
+	color: #fff;
+	padding: 0 25px;
+	line-height: 40px;
+	background-color: #444;
+    background-repeat: repeat-x;
+}
+.nav-top a {
+	color: #fff;
+	margin-left: 10px;
+}
+.nav-top a:hover {
+	color: #f00;
+}
+.system-name {
+	font-size: 17px;
+}

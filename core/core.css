@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* ===============
+ * Css reset(重新定义Html元素)
+ * =============== */
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, a, 
+del, dfn, em, img,
+small, strong,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, section, summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    font-family: "MicroSoft YaHei", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+ol, ul {
+    list-style: none outside none;
+}
+blockquote, q {
+    quotes: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+strong { 
+    font-weight: bold;
+}
+fieldset, img { 
+    border: medium none;
+}
+caption, th { 
+     text-align: left;
+}
+a:link, a:visited, a:active { 
+    text-decoration: none;
+}
+a:hover { 
+    color: #E4393C; 
+    text-decoration: underline;
+}
+* {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+/* ============================================
+ * 常用宽度、高度、边距、字体、颜色、布局等样式
+ * ============================================*/
+.w {
+     width: 100%
+}
+.h {
+    height: 100%;
+}
+.col-5 {
+    width: 50%;
+}
+.wrapper { 
+    width: 1100px; 
+    margin:0 auto;
+}
+.fl { 
+    float: left;
+}
+.fr { 
+    float: right;
+}
+.block { 
+    display: block;
+    zoom: 1;
+}
+.iblock{
+    display: inline-block;
+}
+.none { 
+    display: none;
+}
+.b{
+    font-weight: bold;
+}
+.cl{
+    clear: left;
+}
+.cr{
+    clear: right;
+}
+.cb{
+    clear: both;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+.pf {
+    position: fixed;
+}
+.text-w{
+    color: #fff;
+}
+.text-b{
+    color:#000;
+}
+.text-l {
+    color: #aaa;
+}
+.t-left{
+    text-align: left;
+}
+.t-center{
+    text-align: center;
+}
+.t-right{
+    text-align: right;
+}
+.spliter {
+    border-left:1px solid #aaa;
+}
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after { 
+   content:"";
+   display:table;
+   clear:both;
+}
+.one-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.center {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3D(-50%,-50%,0);
+    -ms-transform: translate3D(-50%,-50%,0);
+    -moz-transform: translate3D(-50%,-50%,0);
+    -o-transform: translate3D(-50%,-50%,0);
+    transform: translate3D(-50%,-50%,0);
+    z-index: 100;
+}
+.transparent {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
