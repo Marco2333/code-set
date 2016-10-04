@@ -20,7 +20,38 @@
 	    }
 
 	    ob_end_clean();  //清空缓存 
+	    
+	    // //一个Excel文件的多个Sheet
+	    // for ($i = 0; $i < count($sheetName); $i++) { 
+	    //     // 表头 
+	    //     $objPHPExcel->createSheet();
+	    //     $objPHPExcel->setActiveSheetIndex($i);
 	         
+	    //     //$column_info包含多个sheet的信息，包括表头和内容
+	    //     for($currentColumn='A',$j=1;$j < count($column_info[$i]);$currentColumn++,$j++){
+	    //         $colunmname = $column_info[$i][$j]['col_meaning'];
+	    //         $objPHPExcel->getActiveSheet()
+	    //         ->setCellValue($currentColumn.'1', $colunmname);
+	    //     }
+	     
+	    //     // 内容
+	    //     for($currentRow=2,$j=0;$currentRow <= count($res[$i])+1;$currentRow++,$j++){
+	    //         for($currentColumn='A',$k=1;$k < count($column_info[$i]);$currentColumn++,$k++){
+	    //             $objPHPExcel->getActiveSheet()
+	    //             ->getStyle($currentColumn. $currentRow)
+	    //             ->getAlignment()
+	    //             ->setHorizontal(\PHPExcel_Style_Alignment::HORIZONTAL_LEFT);
+	    //             $objPHPExcel->getActiveSheet()
+	    //                 ->setCellValue($currentColumn. $currentRow, $res[$i][$j]['field_'.($k)]);
+	    //         } 
+	    //     } 
+	    //     //设置sheet的标题
+	    //     $objPHPExcel->getActiveSheet()->setTitle($tablename[$i]['sheetname']);
+	     
+	    //     ob_end_clean();  //清空缓存 
+	    //     // 输出             
+	    // }
+	     
 	    header("Pragma: public");
 	    header("Expires: 0");
 
